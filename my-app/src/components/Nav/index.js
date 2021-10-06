@@ -4,16 +4,20 @@ import {NavLink} from "react-router-dom";
 function Nav() {
     return(
         <header>
+            <h2>My Portfolio</h2>
             <nav>
                 <ul>
                     <li>
                     <NavLink to="/">Homepage</NavLink>
                     </li>
                     <li>
-                    <NavLink to="/about">About</NavLink>
+                    <NavLink to="/About">About</NavLink>
                     </li>
                     <li>
-                    <NavLink to="/test">Test</NavLink>
+                    <NavLink to="/Gallery">Works</NavLink>
+                    </li>
+                    <li>
+                    <NavLink to="/Contact">Contact</NavLink>
                     </li>
                 </ul>
             </nav>
