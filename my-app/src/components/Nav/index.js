@@ -3,21 +3,21 @@ import {NavLink} from "react-router-dom";
 
 function Nav() {
     return(
-        <header>
+        <header className='flex-row px-1'>
             <h2>My Portfolio</h2>
             <nav>
-                <ul>
-                    <li>
-                    <NavLink to="/">Homepage</NavLink>
-                    </li>
-                    <li>
+                <ul className='flex-row'>
+                    <li className='mx-2'>
                     <NavLink to="/About">About</NavLink>
                     </li>
-                    <li>
-                    <NavLink to="/Gallery">Works</NavLink>
+                    <li className='mx-2'>
+                    <NavLink to="/Portfolio">Works</NavLink>
                     </li>
-                    <li>
+                    <li className='mx-2'>
                     <NavLink to="/Contact">Contact</NavLink>
+                    </li>
+                    <li className='mx-2'>
+                    <NavLink to='/resume'>Resume</NavLink>
                     </li>
                 </ul>
             </nav>

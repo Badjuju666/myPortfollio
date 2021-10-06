@@ -2,11 +2,11 @@ import React from 'react';
 import screenshotOne from '../../assets/RunBuddy.png'; 
 
 
-function Gallery(){
+function Portfolio(){
 
     return(
         <section>
-            <h1 id="about">Gallery</h1>
+            <h1 id="about">Portfolio</h1>
             <h2>Run Buddy</h2>
         <p>Run Buddy</p>
         <div className="flex=row">
@@ -17,4 +17,4 @@ function Gallery(){
     )
 }
 
-export default Gallery; 
+export default Portfolio; 
