@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import './App.css';
 import About from './components/About/index';
-import Gallery from './components/Gallery/index';
+import Portfolio from './components/Portfolio/index.js';
 import Contact from './components/Contact/index';
 import Nav from './components/Nav/index';
 import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
-import Homepage from './components/Homepage/index';
 import './App.css';
-import Portfolio from './components/Portfolio/index';
 import Resume from './components/Resume/index';
 
 function App() {

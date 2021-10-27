@@ -25,6 +25,12 @@ body {
   min-height: 100%;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -32,7 +38,12 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: 0.1em;
-  background: var(--dark);
+  background-image: url("./assets/cover/download.jpeg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
   color: var(--light);
   font-family: 'Poiret One', cursive;
 }
@@ -205,6 +216,7 @@ textarea {
 .my-5 {
   margin-top: var(--spacing-five);
   margin-bottom: var(--spacing-five);
+  
 }
 
 .px-1 {
