@@ -6,7 +6,6 @@ function Portfolio(){
 
     return(
         <section>
-            <h1 id="about">Portfolio</h1>
             <h2>Run Buddy</h2>
         <p>Run Buddy</p>
         <div className="flex=row">

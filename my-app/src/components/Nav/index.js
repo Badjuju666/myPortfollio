@@ -1,28 +1,37 @@
-import React from 'react';
-import {NavLink} from "react-router-dom";
+import React, { useEffect } from 'react';
+import { capitalizeFirstLetter } from '../../utils/helper';
 
-function Nav() {
-    return(
-        <header className='flex-row px-1'>
-            <h2>My Portfolio</h2>
-            <nav>
-                <ul className='flex-row'>
-                    <li className='mx-2'>
-                    <NavLink to="/About">About</NavLink>
-                    </li>
-                    <li className='mx-2'>
-                    <NavLink to="/Portfolio">Works</NavLink>
-                    </li>
-                    <li className='mx-2'>
-                    <NavLink to="/Contact">Contact</NavLink>
-                    </li>
-                    <li className='mx-2'>
-                    <NavLink to='/resume'>Resume</NavLink>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    )
+function Nav(props) {
+  const {
+    pages = [],
+    setCurrentPage,
+    currentPage,
+  } = props;
+
+  useEffect(() => {
+    document.title = capitalizeFirstLetter(currentPage.name);
+  }, [currentPage]);
+
+  return (    
+      <nav>
+        <ul className="flex-row">
+          {pages.map((Page) => (
+            <li
+              className={`mx-5 ${
+                currentPage.name === Page.name && 'navActive'
+                }`}
+              key={Page.name}
+            >
+              <span
+                onClick={() => setCurrentPage(Page)}
+              >
+                {capitalizeFirstLetter(Page.name)}
+              </span>
+            </li>
+          ))}
+        </ul>
+      </nav>
+  );
 }
 
 export default Nav;
