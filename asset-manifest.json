@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/Badjuju666/myPortfolio/static/css/main.15ed97a8.chunk.css",
+    "main.js": "/Badjuju666/myPortfolio/static/js/main.84b6c5fe.chunk.js",
+    "main.js.map": "/Badjuju666/myPortfolio/static/js/main.84b6c5fe.chunk.js.map",
+    "runtime-main.js": "/Badjuju666/myPortfolio/static/js/runtime-main.eead91a5.js",
+    "runtime-main.js.map": "/Badjuju666/myPortfolio/static/js/runtime-main.eead91a5.js.map",
+    "static/js/2.92fcc4b9.chunk.js": "/Badjuju666/myPortfolio/static/js/2.92fcc4b9.chunk.js",
+    "static/js/2.92fcc4b9.chunk.js.map": "/Badjuju666/myPortfolio/static/js/2.92fcc4b9.chunk.js.map",
+    "static/js/3.a3d5f47d.chunk.js": "/Badjuju666/myPortfolio/static/js/3.a3d5f47d.chunk.js",
+    "static/js/3.a3d5f47d.chunk.js.map": "/Badjuju666/myPortfolio/static/js/3.a3d5f47d.chunk.js.map",
+    "index.html": "/Badjuju666/myPortfolio/index.html",
+    "static/css/main.15ed97a8.chunk.css.map": "/Badjuju666/myPortfolio/static/css/main.15ed97a8.chunk.css.map",
+    "static/js/2.92fcc4b9.chunk.js.LICENSE.txt": "/Badjuju666/myPortfolio/static/js/2.92fcc4b9.chunk.js.LICENSE.txt",
+    "static/media/RunBuddy.eac1c46e.png": "/Badjuju666/myPortfolio/static/media/RunBuddy.eac1c46e.png",
+    "static/media/index.css": "/Badjuju666/myPortfolio/static/media/download.ee9bcdd8.jpeg",
+    "static/media/itme.807b9aa4.jpg": "/Badjuju666/myPortfolio/static/media/itme.807b9aa4.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.eead91a5.js",
+    "static/js/2.92fcc4b9.chunk.js",
+    "static/css/main.15ed97a8.chunk.css",
+    "static/js/main.84b6c5fe.chunk.js"
+  ]
+}
