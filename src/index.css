@@ -299,7 +299,7 @@ textarea {
 }
 
 .project-text {
-    color: var(--secondary);
+    color: rgb(62, 231, 62);
     position: absolute;
     top: 0px;
     bottom: 0px;
@@ -314,7 +314,7 @@ textarea {
 .project-text:hover {
   background-color: var(--alpha);
   opacity: 1;
-  border: 10px solid var(--secondary);
+  border: 10px solid  rgb(62, 231, 62);
 }
 
 .project-text h3 {
@@ -329,15 +329,8 @@ textarea {
 }
 
 .project-text a:hover {
-  color: var(--darker);
+  color: rgb(62, 231, 62);
 }
-
-.navActive {
-  color: var(--secondary);
-  cursor: default;
-  text-shadow: 3px 3px 15px rgba(255,255,255, .5);
-}
-
 
 .img-thumbnail {
   width: auto;
@@ -390,7 +383,7 @@ button {
   background-size: cover;
 }
 .navActive {
-  color: var(--secondary);
+  color: rgb(62, 231, 62);;
   cursor: default;
   text-shadow: 3px 3px 15px rgba(255,255,255, .5);
 }

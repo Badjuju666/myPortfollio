@@ -12,7 +12,7 @@ function Portfolio(){
             name: 'notetake',
             description: 'Write, save and delete notes with this note taking application.',
             link: "https://note-takeszz.herokuapp.com/",
-            repo: "https://github.com",
+            repo: "https://github.com/Badjuju666/Note-Taker",
             // imgLink: screenOne
         },
         {
