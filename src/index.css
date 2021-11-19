@@ -20,15 +20,9 @@ main {
   box-sizing: border-box;
 }
 
-html,
+html
 body {
   min-height: 100%;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -39,10 +33,10 @@ body {
   font-size: 18px;
   letter-spacing: 0.1em;
   background-image: url("./assets/cover/download.jpeg");
-  background-color: #cccccc;
   background-position: center;
-  background-repeat: no-repeat;
   background-size: cover;
+  background-color: #cccccc;
+  background-repeat: no-repeat;
   position: relative;
   color: var(--light);
   font-family: 'Poiret One', cursive;
@@ -90,15 +84,19 @@ p {
 }
 
 a {
-  color: var(--tertiary);
   text-decoration: none;
+  color: rgb(62, 231, 62);
   font-weight: bold;
+  text-align: right;
+  opacity: .5;
 }
 
 a:hover {
+  color: var(--tertiary);
+  opacity: 1;
+  transition: all .2s ease-in-out;
   text-decoration: underline;
 }
-
 header {
   height: 200px;
   position: relative;
@@ -112,14 +110,17 @@ header a {
 
 button {
   font-size: 1rem;
+  font-weight: 600;
   text-decoration: none;
-  padding: 0.25rem 1rem;
   border-radius: 0.5rem;
   border: none;
+  color: #fff;
   outline: none;
   cursor: pointer;
   margin: 0 1px;
-  background-color: var(--secondary);
+  background-color: var(--dark);
+  padding: 10px 15px;
+  opacity: 0.7;
 }
 
 button:hover {
@@ -131,9 +132,9 @@ button[disabled] {
   opacity: 0.8;
 }
 
-img {
+/* img {
   max-width: 100%;
-}
+} */
 
 span[role='img'] {
   cursor: default;
@@ -178,6 +179,14 @@ nav li {
   margin: 0 50px;
 }
 
+ul.skills {
+  line-height: 2rem;
+}
+
+ul.skills li {
+  list-style-type: circle;
+}
+
 footer {
   font-size: 48px;
   justify-content: center;
@@ -219,6 +228,10 @@ textarea {
 
 .flex-end {
   justify-content: flex-end;
+}
+
+.flex-center {
+  justify-content: center;
 }
 
 .mx-1 {
@@ -271,6 +284,60 @@ textarea {
   width: 25%;
   text-align: center;
 }
+.project {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  height: 300px;
+  margin: 30px;
+}
+
+.project-bg {
+  position: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.project-text {
+    color: var(--secondary);
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    padding: 50px;
+    z-index: 900;
+    opacity: 0;
+    transition: all .5s ease-in-out;
+}
+
+.project-text:hover {
+  background-color: var(--alpha);
+  opacity: 1;
+  border: 10px solid var(--secondary);
+}
+
+.project-text h3 {
+  font-size: 2.5rem;
+}
+
+.project-text a {
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--dark);
+  transition: all .3s ease-in-out;
+}
+
+.project-text a:hover {
+  color: var(--darker);
+}
+
+.navActive {
+  color: var(--secondary);
+  cursor: default;
+  text-shadow: 3px 3px 15px rgba(255,255,255, .5);
+}
+
 
 .img-thumbnail {
   width: auto;
@@ -316,17 +383,24 @@ button {
   margin-bottom: 30px;
   padding: 10px 15px;
 }
-
-a {
-  border-radius: 5px;
-  color: var(--primary);
-  font-weight: 600;
-  padding: 2px 4px;
-  margin-left: -2px;
-  margin-right: -2px;
+.backgroundImage{
+  height: 60vh;
+  left: 1%;
+  right: 1%;
+  background-size: cover;
 }
 .navActive {
   color: var(--secondary);
   cursor: default;
   text-shadow: 3px 3px 15px rgba(255,255,255, .5);
+}
+.contact-link:hover {
+  color: var(--ruby-red) !important;
+  font-size: 20px;
+  font-style: bold;
+}
+
+.github-link:hover {
+  color: var(--eerie-black-2);
+  background-color: var(--isabelline);
 }

@@ -1,54 +1,28 @@
-import React, { useState } from 'react';
-import Project from "../Project";
+import React from 'react';
+import { removeHyphensAndCapitalize } from '../../utils/helper';
 
-function Portfolio() {
+function Project({ project }) {
 
-  // Replace links with deployed projects and GitHub repos
-  const [projects] = useState([
-    {
-      name: 'Employee-Manager',
-      description: 'MySQL/JavaScript/Node',
-      link: "https://github.com/Badjuju666/Employee-Manager.git",
-      repo: "https://github.com/Badjuju666/Employee-Manager"
-    },
-    {
-      name: 'pastel-puzzels',
-      description: 'MERN Stack',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'run-buddy',
-      description: 'HTML/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'led-wall',
-      description: 'Node/IoT',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-    {
-      name: 'calculator',
-      description: 'React/JavaScript/CSS',
-      link: "https://github.com",
-      repo: "https://github.com"
-    },
-  ]);
-
-  return (
-    <div>
-      <div className="flex-row">
-        {projects.map((project, idx) => (
-          <Project
-            project={project}
-            key={"project" + idx}
-          />
-        ))}
+    const { name, repo, link, description } = project;
+  
+    return (
+      <div className="project" key={name}>
+        <img
+          src={require(`../../assets/projects/${name}.jpg`)}
+          alt={removeHyphensAndCapitalize(name)}
+          className="project-bg"
+        />
+        <div className="project-text">
+          <h3>
+            <a href={link}>{removeHyphensAndCapitalize(name)}</a>{' '}
+            <a href={repo}>
+              <i className="fab fa-github"></i>
+            </a>
+          </h3>
+          <p>{description}</p>
+        </div>
       </div>
-    </div>
-  );
-};
-
-export default Portfolio;
+    );
+  }
+  
+export default Project;

@@ -1,20 +1,13 @@
 import React, {useState} from "react";
-// import About from './components/About/index';
-// import Portfolio from './components/Portfolio/index.js';
-// import Contact from './components/Contact/index';
 import Header from "./components/Header"
-import Nav from './components/Nav/index';
-import Footer from './components/Footer';
+import Nav from "./components/Nav/index";
+import Footer from "./components/Footer";
 import Page from "./components/Page";
-// import {BrowserRouter as Router,Switch, Route} from 'react-router-dom';
-import './App.css';
-// import Resume from './components/Resume/index';
+// import './App.css';
 
 function App() {
   const [pages] = useState([
-    {
-      name: "about me"
-    },
+    { name: "about me" },
     { name: "portfolio" },
     { name: "contact" },
     { name: "resume" }
@@ -36,21 +29,6 @@ function App() {
       </main>
       <Footer />
     </div>
-    // <div>
-    //   <Router>
-    //     <Nav/>
-    // <main>
-    //   <Switch>
-    //     <Route exact path='/about' component={ About }/>
-    //     <Route exact path='/contact' component={ Contact }/>
-    //     <Route exact path='/portfolio' component={ Portfolio }/>
-    //     <Route exact path='/resume' component={Resume}/>
-    //     {/* <Route component={ Homepage }/> */}
-    //   </Switch>
-    // </main>
-    // </Router>
-    // <Footer />
-    // </div>
   );
 }
 
