@@ -8,7 +8,8 @@ function Project({ project }) {
     return (
       <div className="project" key={name}>
         <img
-          src={require(`../../assets/projects/${name}.jpg`)}
+          src={`${process.env.PUBLIC_URL}/assets/projects/${name}.jpg`}
+        //   src={require(`../../assets/projects/${name}.jpg`)}
           alt={removeHyphensAndCapitalize(name)}
           className="project-bg"
         />
